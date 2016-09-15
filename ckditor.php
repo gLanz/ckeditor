@@ -14,6 +14,8 @@
  * $CKEditor = new CKEditor();
  * $CKEditor->editor("editor1", "<p>Initial value.</p>");
  * @endcode
+ * 
+ * edit by gtech
  */
 class CKEditor
 {
