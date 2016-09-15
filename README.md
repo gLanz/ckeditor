@@ -1,4 +1,4 @@
-# ckeditor
+# CKEditor dan CKFinder Library 
 
 Library CKEditor
 
