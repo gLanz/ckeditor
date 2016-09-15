@@ -1,7 +1,7 @@
 <?php
 /*
  * CKFinder
- * ========
+ * ==============================
  * http://ckfinder.com
  * Copyright (C) 2007-2016, CKSource - Frederico Knabben. All rights reserved.
  *
