@@ -1,0 +1,4 @@
+# ckeditor
+
+Library CKEditor
+
