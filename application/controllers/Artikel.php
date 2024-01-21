@@ -5,20 +5,25 @@ class Artikel extends CI_Controller{
         $this->load->library('CKEditor, CKFinder'); //load library ckeditor dan ckfinder
   }
   
-  public class index(){
-    $path = '../../assets/plugins/ckfinder'; //sesuaikan dengan path ckfinder anda
+  public function index(){
+    $path = '../../assets/ckfinder'; //sesuaikan dengan path ckfinder anda
     $width = '100%';
     $this->editor($path, $width);
 
-    $load->view->artikel();
+    $this->load->view('fartikel');
   }
 
-  function editor($path,$width) { 
+  public function submit(){
+    //code untuk proses simpan insert atau update
+  }
+
+  public function editor($path,$width) { 
     //configure base path of ckeditor folder
-    $this->ckeditor->basePath = base_url().'assets/plugins/ckeditor/'; //sesuikan dengan path ckeditor anda
-    $this->ckeditor-> config['toolbar'] = 'Full';
+    $this->ckeditor->basePath = base_url().'assets/ckeditor/'; //sesuikan dengan path ckeditor anda
+    $this->ckeditor->config['toolbar'] = 'Full';
     $this->ckeditor->config['language'] = 'en';
     $this->ckeditor->config['width'] = $width;
+
     //configure ckfinder dan ckeditor config
     $this->ckfinder->SetupCKEditor($this->ckeditor,$path);
   }
